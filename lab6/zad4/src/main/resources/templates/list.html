@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User List</title>
+  </head>
+  <body>
+    <h2>User List</h2>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>User Type</th>
+          <th>Registration Date</th>
+          <th>Days Since Registration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="user, iterStat : ${userList}">
+          <td th:text="${iterStat.index + 1}"></td>
+          <td th:text="${user.id}"></td>
+          <td th:text="${user.name}"></td>
+          <td th:text="${user.age}"></td>
+          <th:block th:switch="${user.userType}">
+            <td th:case="${T(com.tje.users.User.UserType).GUEST}">gość</td>
+            <td th:case="${T(com.tje.users.User.UserType).REGISTERED}">
+              zarejestrowany
+            </td>
+            <td th:case="${T(com.tje.users.User.UserType).ADMIN}">
+              wszechmogący admin
+            </td>
+          </th:block>
+          <td
+            th:text="${#dates.format(user.registrationDate, 'yyyy-MM-dd HH:mm:ss')}"
+          ></td>
+          <td
+            th:text="${#dates.createNow().getDate() - user.registrationDate.getDate()}"
+          ></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="jillian" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg name="firstName" type="java.lang.String" value="Jillian" />
+		<constructor-arg name="lastName" type="java.lang.String" value="Palethorpe" />
+		<constructor-arg name="email" type="java.lang.String" value="jpalethorpe0@accuweather.com" />
+		<constructor-arg name="companyName" type="java.lang.String" value="Layo" />
+	</bean>
+	<bean id="mohandas" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Mohandas" />
+		<constructor-arg type="java.lang.String" value="Branchet" />
+		<constructor-arg type="java.lang.String" value="mbranchet1@marriott.com" />
+		<constructor-arg type="java.lang.String" value="Gigabox" />
+	</bean>
+	<bean id="philly" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Philly" />
+		<constructor-arg type="java.lang.String" value="Guyton" />
+		<constructor-arg type="java.lang.String" value="pguyton2@shareasale.com" />
+		<constructor-arg type="java.lang.String" value="Quatz" />
+	</bean>
+	<bean id="kirsteni" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Kirsteni" />
+		<constructor-arg type="java.lang.String" value="Bentham3" />
+		<constructor-arg type="java.lang.String" value="kbentham3@loc.gov" />
+		<constructor-arg type="java.lang.String" value="Quaxo" />
+	</bean>
+	<bean id="cosetta" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Cosetta" />
+		<constructor-arg type="java.lang.String" value="Rolfi" />
+		<constructor-arg type="java.lang.String" value="crolfi4@photobucket.com" />
+		<constructor-arg type="java.lang.String" value="Riffwire" />
+	</bean>
+	<bean id="hedvig" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Hedvig" />
+		<constructor-arg type="java.lang.String" value="Firminger" />
+		<constructor-arg type="java.lang.String" value="hfirminger5@netscape.com" />
+		<constructor-arg type="java.lang.String" value="Quire" />
+	</bean>
+	<bean id="lorna" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Lorna" />
+		<constructor-arg type="java.lang.String" value="Caseley" />
+		<constructor-arg type="java.lang.String" value="lcaseley6@illinois.edu" />
+		<constructor-arg type="java.lang.String" value="Skinix" />
+	</bean>
+	<bean id="arty" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Arty" />
+		<constructor-arg type="java.lang.String" value="Nesey" />
+		<constructor-arg type="java.lang.String" value="anesey7@washington.edu" />
+		<constructor-arg type="java.lang.String" value="Dabvine" />
+	</bean>
+	<bean id="dugald" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Dugald" />
+		<constructor-arg type="java.lang.String" value="Fechnie" />
+		<constructor-arg type="java.lang.String" value="dfechnie8@feedburner.com" />
+		<constructor-arg type="java.lang.String" value="Twitterbridge" />
+	</bean>
+	<bean id="kamilah" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Kamilah" />
+		<constructor-arg type="java.lang.String" value="Wolters" />
+		<constructor-arg type="java.lang.String" value="kwoltersa@google.es" />
+		<constructor-arg type="java.lang.String" value="Shuffledrive" />
+	</bean>
+	<bean id="meredeth" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Meredeth" />
+		<constructor-arg type="java.lang.String" value="Bedward" />
+		<constructor-arg type="java.lang.String" value="mbedwardb@uiuc.edu" />
+		<constructor-arg type="java.lang.String" value="Meeveo" />
+	</bean>
+	<bean id="aloin" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Aloin" />
+		<constructor-arg type="java.lang.String" value="Rigglesford" />
+		<constructor-arg type="java.lang.String" value="arigglesfordc@cafepress.com" />
+		<constructor-arg type="java.lang.String" value="Skyble" />
+	</bean>
+	<bean id="petunia" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Petunia" />
+		<constructor-arg type="java.lang.String" value="Chevolleau" />
+		<constructor-arg type="java.lang.String" value="pchevolleaud@cnn.com" />
+		<constructor-arg type="java.lang.String" value="Zoombeat" />
+	</bean>
+	<bean id="sunshine" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Sunshine" />
+		<constructor-arg type="java.lang.String" value="Haggerty" />
+		<constructor-arg type="java.lang.String" value="shaggertye@webnode.com" />
+		<constructor-arg type="java.lang.String" value="Digitube" />
+	</bean>
+	<bean id="eberto" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Eberto" />
+		<constructor-arg type="java.lang.String" value="Keaves" />
+		<constructor-arg type="java.lang.String" value="ekeavesf@tumblr.com" />
+		<constructor-arg type="java.lang.String" value="Voonte" />
+	</bean>
+	<bean id="tasha" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Tasha" />
+		<constructor-arg type="java.lang.String" value="Shemwell" />
+		<constructor-arg type="java.lang.String" value="tshemwellg@prlog.org" />
+		<constructor-arg type="java.lang.String" value="Brainbox" />
+	</bean>
+	<bean id="philomena" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Philomena" />
+		<constructor-arg type="java.lang.String" value="Diloway" />
+		<constructor-arg type="java.lang.String" value="pdilowayh@opensource.org" />
+		<constructor-arg type="java.lang.String" value="Zoozzy" />
+	</bean>
+	<bean id="raymond" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Raymond" />
+		<constructor-arg type="java.lang.String" value="Behnecke" />
+		<constructor-arg type="java.lang.String" value="rbehneckei@zdnet.com" />
+		<constructor-arg type="java.lang.String" value="Realmix" />
+	</bean>
+	<bean id="Edie" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Edie" />
+		<constructor-arg type="java.lang.String" value="Pledger" />
+		<constructor-arg type="java.lang.String" value="epledgerk@chron.com" />
+		<constructor-arg type="java.lang.String" value="Voonder" />
+	</bean>
+	<bean id="Brooke" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Brooke" />
+		<constructor-arg type="java.lang.String" value="Ratcliff" />
+		<constructor-arg type="java.lang.String" value="bratcliffl@dailymotion.com" />
+		<constructor-arg type="java.lang.String" value="Livetube" />
+	</bean>
+	<bean id="Kristy" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Kristy" />
+		<constructor-arg type="java.lang.String" value="Burnsyde" />
+		<constructor-arg type="java.lang.String" value="kburnsydem@dailymotion.com" />
+		<constructor-arg type="java.lang.String" value="Oyoloo" />
+	</bean>
+	<bean id="Vinnie" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Vinnie" />
+		<constructor-arg type="java.lang.String" value="Arp" />
+		<constructor-arg type="java.lang.String" value="varpn@github.io" />
+		<constructor-arg type="java.lang.String" value="Talane" />
+	</bean>
+	<bean id="Diana" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Diana" />
+		<constructor-arg type="java.lang.String" value="Wickrath" />
+		<constructor-arg type="java.lang.String" value="dwickratho@liveinternet.ru" />
+		<constructor-arg type="java.lang.String" value="Ooba" />
+	</bean>
+	<bean id="Gasper" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Gasper" />
+		<constructor-arg type="java.lang.String" value="Gane" />
+		<constructor-arg type="java.lang.String" value="gganep@usnews.com" />
+		<constructor-arg type="java.lang.String" value="Jabbersphere" />
+	</bean>
+	<bean id="Jere" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Jere" />
+		<constructor-arg type="java.lang.String" value="Maberley" />
+		<constructor-arg type="java.lang.String" value="jmaberleyq@photobucket.com" />
+		<constructor-arg type="java.lang.String" value="Digitube" />
+	</bean>
+	<bean id="Haze" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Haze" />
+		<constructor-arg type="java.lang.String" value="Manske" />
+		<constructor-arg type="java.lang.String" value="hmanskes@trellian.com" />
+		<constructor-arg type="java.lang.String" value="Katz" />
+	</bean>
+	<bean id="Juline" class="com.przemyslowe.lab4.zad3.domain.Person">
+		<constructor-arg type="java.lang.String" value="Juline" />
+		<constructor-arg type="java.lang.String" value="Merchant" />
+		<constructor-arg type="java.lang.String" value="jmerchantt@123-reg.co.uk" />
+		<constructor-arg type="java.lang.String" value="Browsetype" />
+	</bean>
+</beans>

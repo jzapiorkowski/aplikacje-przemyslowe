@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App</title>
+  </head>
+  <body>
+    <div>
+      <p th:if="${daysFromRegister > 200 AND user.age < 30}">
+        Witaj [[${user.name}]]! 
+        od Twojej rejestracji minęło [[${daysFromRegister}]] dni.
+      </p>
+
+      <h1>Dane użytkownika</h1>
+      <p th:text="${user.name}"></p>
+      <p>Id</p>
+      <p th:text="${user.id}"></p>
+      <p>Age</p>
+      <p th:text="${user.age}"></p>
+      <p th:if="${user.age > 35}">Powyżej średniej</p>
+      <p>UserType</p>
+
+      <th:block th:switch="${user.userType}">
+        <p th:case="${T(com.tje.users.User.UserType).GUEST}">gość</p>
+        <p th:case="${T(com.tje.users.User.UserType).REGISTERED}">zarejestrowany</p>
+        <p th:case="${T(com.tje.users.User.UserType).ADMIN}">wszechmogący admin</p>
+      </th:block>
+
+      <p>RegistrationDate</p>
+      <p
+        th:text="${#dates.format(user.registrationDate, 'yyyy-MM-dd HH:mm')}"
+      ></p>
+      </p>
+    </div>
+    <div>
+      <p>
+        Czy artur na stronie:
+        <span th:text="${user.name == 'Addrtur' ? 'tak' : 'nie'}"></span>
+      </p>
+    </div>
+  </body>
+</html>

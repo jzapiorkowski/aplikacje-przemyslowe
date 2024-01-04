@@ -1,0 +1,1 @@
+do transformacji wykorzystałem opcję enhance contrast, wyrównuje to histogram obrazu
